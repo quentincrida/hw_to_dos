@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded',
      newTodo: ""
     },
     methods: {
-      updateList: function(){
-        this.todos = "List Updated";
+      saveNewTodo: function(){
+        this.todos.push(this.newTodo);
+        this.newTodo = "";
       }
     }
-  })
-}
-);
+  });
+});
