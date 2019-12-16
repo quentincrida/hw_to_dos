@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',
     },
     methods: {
       updateList: function(){
-        this.todos = "Updated";
+        this.todos = "List Updated";
       }
     }
   })
