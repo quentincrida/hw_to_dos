@@ -10,10 +10,16 @@
 <body>
 <div id="app">
   <h1>Quentin's TODO List, and other Animals</h1>
-  <h2>{{todos}}</h2>
-  <button v-on:click="updateList">Update List</button>
+  <!-- <h2>{{todos}}</h2> -->
+  <!-- <button v-on:click="updateList">Update List</button> -->
 <ul>
-  <li>YKWIM</li>
+  <li v-for="todo in todos"></li>
+
+  <form>
+    <label for="new-item">Add a new TODO:</label>
+    <input id="new-todo" type="text" v-model="newTodo">
+    <input type="submit" value="Save New TODO">
+  </form>
 </ul>
 </div>
 

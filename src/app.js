@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded',
   new Vue({
     el: "#app",
     data: {
-     todos: ["Buy Shopping", "Clean Bathroom", "Car's MOT"]
+     todos: ["Buy Shopping", "Clean Bathroom", "Car's MOT"],
+     newTodo: ""
     },
     methods: {
       updateList: function(){
